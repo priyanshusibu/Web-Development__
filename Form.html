@@ -1,0 +1,50 @@
+<!DOCTYPE html>  
+ <html>  
+ <head>  
+  <title>Form in HTML</title> 
+  <style>
+    .container{
+            width: 40%;
+            border: 2px solid black;
+            background-color: aqua;
+            margin: auto;
+             }
+    #myform input{
+            font-size: large;
+    }
+  </style> 
+</head>  
+ <body>  
+     <h2>Registration form</h2> 
+     <div class="container"> 
+    <form id="myform" action="servletPage">  
+     <fieldset>  
+        <legend>User personal information</legend>  
+        <label>Enter your full name</label><br>  
+        <input type="text" name="name"><br>  
+         <label>Enter your email</label><br>  
+         <input type="email" name="email"><br>  
+         <label>Enter your password</label><br>  
+         <input type="password" name="pass"><br>  
+         <label>confirm your password</label><br>  
+         <input type="password" name="pass"><br>  
+         <br><label>Enter your gender</label><br>  
+         <input type="radio" id="gender" name="gender" value="male"/>Male  <br>  
+         <input type="radio" id="gender" name="gender" value="female"/>Female <br/>    
+         <input type="radio" id="gender" name="gender" value="others"/>others <br/>   
+         <label for="cource">Select your cource:</label>
+         <select id="cars" name="cars">
+         <option value="java">Java</option>
+         <option value="c++">C++</option>
+         <option value="Python">Python</option>
+         <option value="JvaScriop">JvaScriop</option>
+         </select><br>
+          <br>Enter your Address:<br>  
+         <textarea></textarea><br>  
+         <input type="checkbox" id="myCheck">Agree terms and conditions<br/>
+         <input type="submit" value="sign-up">  
+     </fieldset>  
+  </form>  
+    </div>
+ </body>  
+</html>  
